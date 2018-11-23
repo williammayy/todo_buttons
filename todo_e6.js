@@ -58,7 +58,6 @@ class Todo extends Store {
                     lista.editarIndex(item.idx, inputDesc.value)
                     componentList_v2(lista.todos)
                     valueItem.value = ''
-                    valueItem.focus()
                     inputDesc.setAttribute('disabled', 'disabled')
                 }
             })
