@@ -10,11 +10,7 @@ var cacheName = 'todo-app';
 var filesToCache = [
     `${HOST}/imagens/edit.png`,
     `${HOST}/imagens/remove.png`,
-    `${HOST}/imagens/icons/icon-128x128.png`,
-    `${HOST}/imagens/icons/icon-144x144.png`,
-    `${HOST}/imagens/icons/icon-152x152.png`,
-    `${HOST}/imagens/icons/icon-192x192.png`,
-    `${HOST}/imagens/icons/icon-256x256.png`,
+    `${HOST}/imagens/plus`,
     `${HOST}/lib/bulma.css`,
     `${HOST}/app.css`,
     `${HOST}/app.js`,
