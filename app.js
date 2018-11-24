@@ -24,7 +24,7 @@ cadastrar.addEventListener('click', (e) => {
 
     lista.novoItem = {
         "nome": valueItem.value,
-        "cor": corValue.value,
+        "cor": cor.value,
         "pontos": pontoValor.value
     }
     componentList_v2(lista.todos)
