@@ -6,31 +6,55 @@ class Todo extends Store {
     renderItem(item) {
 
         let template = `
-    <div class="field is-grouped">
 
-            <p class="control is-expanded">
-            <input class="input is-large" style="min-width:150px" type="text" disabled value="${item.nome}">
-            </p>
+        <div class="columns" style="margin-top: 10px">
+        <div class="column" style="background-color:#8B0000; height: 150px;padding: 2px">
+            <div style="height: 100%; position: relative;">
 
 
-        <p class="control menos is-large"> <a class="button is-warning is-large">-</a></p>
-            <p class="control is-expanded"> <input style="min-width:55px" class="input is-large" type="number" disabled value="${item.pontos}"></p>
-            <p class="control mais "> <a class="button is-info is-large">+</a></p>
-            <p class="control">
-                <a class="button is-danger deletar">
-                    <span class="icon is-small">
-                        <i class="fas fa-times"></i>
-                    </span>
-                </a>
-            </p>
-            <p class="control">
-                <a class="button is-default editar">
-                    <span class="icon is-small">
-                        <i class="fas fa-edit"></i>
-                    </span>
-                </a>
-            </p>
+
+                <div style="position: absolute; top:5%;left: 50%;margin-left:-50%;width: 100% ">
+                    <input style="background-color: transparent;color: white;font-size: 30px;-webkit-text-stroke-width: 1px;
+                    -webkit-text-stroke-color: #000;" type="text " class="inputPontos input" disabled value="${item.nome}">
+                </div>
+
+
+                <div style="position: absolute; top:20%;left: 50%;margin-left:-50%;width: 100%  ">
+                    <input style="background-color: transparent; color: white;font-size: 80px;-webkit-text-stroke-width: 1px;
+                    -webkit-text-stroke-color: #000;" class=" inputPontos input " type="number " disabled value="11 ">
+                </div>
+
+                <div class="menos" style="position: absolute;top:5%;left:20%;">
+                    <a style="background-color: transparent;
+                     color: white;font-size: 80px;-webkit-text-stroke-width: 1px;
+                    -webkit-text-stroke-color: #000;" class="inputPontos">-</a>
+                </div>
+
+                <div class="mais" style="position: absolute;top:5%;right:20%;">
+                    <a style="background-color: transparent;
+                         color: white;font-size: 80px;-webkit-text-stroke-width: 1px;
+                        -webkit-text-stroke-color: #000;" class="inputPontos">+</a>
+                </div>
+
+                <div style="position: absolute;top:5%;right:2%;">
+                    <a class="button is-danger deletar ">
+                        <span class="icon is-small ">
+                            <i class="fas fa-times "></i>
+                        </span>
+                    </a>
+                </div>
+
+                <p style="position: absolute;top:5%;right:12%;">
+                    <a class="button is-default editar ">
+                        <span class="icon is-small ">
+                            <i class="fas fa-edit "></i>
+                        </span>
+                    </a>
+                </p>
+
+            </div>
         </div>
+    </div>
     `
 
         let itemHTML = document.createRange().createContextualFragment(template)
@@ -58,6 +82,7 @@ class Todo extends Store {
                     lista.editarIndex(item.idx, inputDesc.value)
                     componentList_v2(lista.todos)
                     valueItem.value = ''
+                    valueItem.focus()
                     inputDesc.setAttribute('disabled', 'disabled')
                 }
             })

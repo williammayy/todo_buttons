@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Contador</title>
     <script src="https://williammayy.github.io/todo_buttons/store.js"></script>
@@ -14,20 +15,29 @@
     <link rel="stylesheet" href="https://williammayy.github.io/todo_buttons/lib/bulma.css">
     <link rel="manifest" href="https://williammayy.github.io/todo_buttons/manifest.json">
     <script src="https://williammayy.github.io/todo_buttons/service-worker.js"></script>
+    <style>
+        .inputPontos {
+            height: 100%;
+            padding: 0px;
+            border: none;
+            text-align: center
+        }
+    </style>
 </head>
 
 <body>
+
     <section class="section">
         <div class="container">
             <h1 class="title">
-                Contador de pontos
+                Contador de Vida
             </h1>
             <div class="columns">
                 <div class="column">
-                    <input type="number" id="pontoValor" value=0 class="input is-primary is-large " \>
+                    <input type="number" id="pontoValor" value=20 class="input is-primary is-large " \>
                 </div>
                 <div class="column">
-                    <input required type="text" id="itemValue" name="itemValue" size="35" class="input is-primary is-large" placeholder='Apos inserir os pontos iniciais, escreva o nome do jogador aqui! Então pressione "Enter" '>
+                    <input required type="text" id="itemValue" name="itemValue" size="35" class="input is-primary is-large" placeholder='Nome'>
                 </div>
 
             </div>
@@ -37,9 +47,58 @@
             <div class="container" id="itensRenderizados">
                 <!-- Auto rendered itens -->
             </div>
+
+            <div class="columns" style="margin-top: 10px">
+                <div class="column" style="background-color:#006400; height: 150px;padding: 2px">
+                    <div style="height: 100%; position: relative;">
+
+
+
+                        <div style="position: absolute; top:5%;left: 50%;margin-left:-50%;width: 100% ">
+                            <input style="background-color: transparent;color: white;font-size: 30px;-webkit-text-stroke-width: 1px;
+                                -webkit-text-stroke-color: #000;" type="text " class="inputPontos input" disabled value="${item.nome}">
+                        </div>
+
+
+                        <div style="position: absolute; top:20%;left: 50%;margin-left:-50%;width: 100%  ">
+                            <input style="background-color: transparent; color: white;font-size: 80px;-webkit-text-stroke-width: 1px;
+                                -webkit-text-stroke-color: #000;" class=" inputPontos input " type="number " disabled value="11 ">
+                        </div>
+
+                        <div class="menos" style="position: absolute;top:5%;left:20%;">
+                            <a style="background-color: transparent;
+                                 color: white;font-size: 80px;-webkit-text-stroke-width: 1px;
+                                -webkit-text-stroke-color: #000;" class="inputPontos">-</a>
+                        </div>
+
+                        <div class="mais" style="position: absolute;top:5%;right:20%;">
+                            <a style="background-color: transparent;
+                                     color: white;font-size: 80px;-webkit-text-stroke-width: 1px;
+                                    -webkit-text-stroke-color: #000;" class="inputPontos">+</a>
+                        </div>
+
+                        <div style="position: absolute;top:5%;right:2%;">
+                            <a class="button is-danger deletar ">
+                                <span class="icon is-small ">
+                                        <i class="fas fa-times "></i>
+                                    </span>
+                            </a>
+                        </div>
+
+                        <p style="position: absolute;top:5%;right:12%;">
+                            <a class="button is-default editar ">
+                                <span class="icon is-small ">
+                                        <i class="fas fa-edit "></i>
+                                    </span>
+                            </a>
+                        </p>
+
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-    <script src="https://williammayy.github.io/todo_buttons/service-worker.js"></script>
+    <script src="https://williammayy.github.io/todo_buttons/service-worker.js "></script>
 </body>
 
 </html>
