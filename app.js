@@ -26,7 +26,6 @@ cadastrar.addEventListener('click', (e) => {
         "nome": valueItem.value,
         "cor": corValue.value,
         "pontos": pontoValor.value
-        //que eu lembre n precisa de virgula no ultimo
     }
     componentList_v2(lista.todos)
     valueItem.value = ''
