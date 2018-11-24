@@ -21,7 +21,7 @@ class Todo extends Store {
 
                 <div style="position: absolute; top:20%;left: 50%;margin-left:-50%;width: 100%  ">
                     <input style="background-color: transparent; color: white;font-size: 80px;-webkit-text-stroke-width: 1px;
-                    -webkit-text-stroke-color: #000;" class=" inputPontos input " type="number " disabled value="11 ">
+                    -webkit-text-stroke-color: #000;" class=" inputPontos input " type="number " disabled value="${item.pontos}">
                 </div>
 
                 <div class="menos" style="position: absolute;top:5%;left:20%;">
