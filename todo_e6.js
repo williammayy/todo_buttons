@@ -44,7 +44,7 @@ class Todo extends Store {
                     </a>
                 </div>
 
-                <p style="position: absolute;top:5%;right:12%;">
+                <p style="position: absolute;top:5%;left:2%;">
                     <a class="button is-default editar ">
                         <span class="icon is-small ">
                             <i class="fas fa-edit "></i>
