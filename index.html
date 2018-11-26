@@ -18,9 +18,11 @@
     <style>
         .inputPontos {
             height: 100%;
+            width: 100%;
             padding: 0px;
-            border: none;
-            text-align: center
+            border: 1px;
+            border-radius: 100px;
+            text-align: center;
         }
     </style>
 </head>
@@ -29,9 +31,6 @@
 
     <section class="section">
         <div class="container">
-            <h1 class="title">
-                Contador de Vida
-            </h1>
             <div class="columns">
                 <div class="column">
                     <input type="number" id="pontoValor" value=20 class="input is-black is-large " \>
@@ -40,7 +39,7 @@
                     <input required type="text" id="itemValue" name="itemValue" size="35" class="input is-black is-large" placeholder='Nome'>
                 </div>
                 <div class="column">
-                    <div class="select is-rounded is-large is-black">
+                    <div class="select is-large is-black">
                         <select name="corValue" id="corValue">
                             <option value="1E90FF" selected style="background-color:#1E90FF;color:white">Azul</option>
                             <option value="008000" style="background-color:#008000; color:white">Verde</option>

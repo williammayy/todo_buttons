@@ -6,11 +6,15 @@ if ('serviceWorker' in navigator) {
         .then(function() { console.log('Service Worker Registered'); });
 }
 
-var cacheName = 'todo-app';
+var cacheName = 'contadorApp';
 var filesToCache = [
     `${HOST}/imagens/edit.png`,
     `${HOST}/imagens/remove.png`,
-    `${HOST}/imagens/plus`,
+    `${HOST}imagens/logo128.png`,
+    `${HOST}imagens/logo144.png`,
+    `${HOST}imagens/logo152.png`,
+    `${HOST}imagens/logo192.png`,
+    `${HOST}imagens/logo256.png`,
     `${HOST}/lib/bulma.css`,
     `${HOST}/app.css`,
     `${HOST}/app.js`,

@@ -27,13 +27,13 @@ class Todo extends Store {
                 <div class="menos" style="position: absolute;top:5%;left:20%;">
                     <a style="background-color: transparent;
                      color: white;font-size: 80px;-webkit-text-stroke-width: 1px;
-                    -webkit-text-stroke-color: #000;" class="inputPontos">-</a>
+                    -webkit-text-stroke-color: #000;border-color:#${item.cor};" class="inputPontos">-</a>
                 </div>
 
                 <div class="mais" style="position: absolute;top:5%;right:20%;">
                     <a style="background-color: transparent;
                          color: white;font-size: 80px;-webkit-text-stroke-width: 1px;
-                        -webkit-text-stroke-color: #000;" class="inputPontos">+</a>
+                        -webkit-text-stroke-color: #000;border-color:#${item.cor};" class="inputPontos">+</a>
                 </div>
 
                 <div style="position: absolute;top:5%;right:2%;">
@@ -44,7 +44,7 @@ class Todo extends Store {
                     </a>
                 </div>
 
-                <p style="position: absolute;top:5%;left:2%;">
+                <p style="position: absolute;top:5%;right:12%;">
                     <a class="button is-default editar ">
                         <span class="icon is-small ">
                             <i class="fas fa-edit "></i>
