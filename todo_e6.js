@@ -24,13 +24,13 @@ class Todo extends Store {
                     -webkit-text-stroke-color: #000;" class=" inputPontos input " type="number " disabled value="${item.pontos}">
                 </div>
 
-                <div class="menos inputPontos" style="position: absolute;top:5%;left:20%;border-color:#${item.cor};">
+                <div class="menos" style="position: absolute;top:5%;left:20%;border-color:#${item.cor};width:10%">
                     <a style="background-color: transparent;
                      color: white;font-size: 80px;-webkit-text-stroke-width: 1px;
                     -webkit-text-stroke-color: #000;border-color:#${item.cor};" class="inputPontos">—</a>
                 </div>
 
-                <div class="mais inputPontos" style="position: absolute;top:5%;right:20%;border-color:#${item.cor};">
+                <div class="mais" style="position: absolute;top:5%;right:20%;border-color:#${item.cor}; width:10%">
                     <a style="background-color: transparent;
                          color: white;font-size: 80px;-webkit-text-stroke-width: 1px;
                         -webkit-text-stroke-color: #000;border-color:#${item.cor};" class="inputPontos">+</a>
