@@ -32,7 +32,7 @@ class Todo extends Store {
 
                 <div class="mais" style="position: absolute;top:5%;right:20%;border-color:#${item.cor}; width:10%;text-align:center;">
                     <a style="background-color: transparent;
-                         color: white;font-size: 70px;-webkit-text-stroke-width: 1px;
+                         color: white;font-size: 65px;-webkit-text-stroke-width: 1px;
                         -webkit-text-stroke-color: #000;border-color:#${item.cor};" class="inputPontos">+</a>
                 </div>
 
