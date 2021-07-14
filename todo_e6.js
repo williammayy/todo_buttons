@@ -37,16 +37,16 @@ class Todo extends Store {
                 </div>
 
                 <div style="position: absolute;top:5%;right:2%;">
-                    <a class="button is-danger deletar ">
-                        <span class="icon is-small " style="border: 1px solid black">
+                    <a class="button is-danger deletar " style="border: 1px solid black">
+                        <span class="icon is-small " >
                             <i class="fas fa-times "></i>
                         </span>
                     </a>
                 </div>
 
                 <p style="position: absolute;top:5%;left:2%;">
-                    <a class="button is-default editar ">
-                        <span class="icon is-small " style="border: 1px solid black">
+                    <a class="button is-default editar " style="border: 1px solid black">
+                        <span class="icon is-small " >
                             <i class="fas fa-edit "></i>
                         </span>
                     </a>
