@@ -8,7 +8,7 @@ class Todo extends Store {
         let template = `
 
         <div class="columns" style="margin-top: 10px">
-        <div class="column" style="background-color:#${item.cor}; height: 150px;padding: 2px">
+        <div class="column" style="background-color:#${item.cor}; height: 150px;padding: 2px; border:2px; border-radius: 1px">
             <div style="height: 100%; position: relative;">
 
 
