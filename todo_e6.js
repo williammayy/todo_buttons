@@ -38,7 +38,7 @@ class Todo extends Store {
 
                 <div style="position: absolute;top:5%;right:2%;">
                     <a class="button is-danger deletar ">
-                        <span class="icon is-small ">
+                        <span class="icon is-small " style="border: 1px solid black">
                             <i class="fas fa-times "></i>
                         </span>
                     </a>
@@ -46,7 +46,7 @@ class Todo extends Store {
 
                 <p style="position: absolute;top:5%;left:2%;">
                     <a class="button is-default editar ">
-                        <span class="icon is-small ">
+                        <span class="icon is-small " style="border: 1px solid black">
                             <i class="fas fa-edit "></i>
                         </span>
                     </a>
